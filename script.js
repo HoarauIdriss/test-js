@@ -8,11 +8,11 @@ $(document).ready(function () {
             for (i = 0; i < listedefoot.length; i++) {
 
                 var lala = "";
-                if (listedefoot.id == 1){
+                if (listedefoot.id === 1){
                     lala = pays + flag;
                     console.log(listedefoot);
                 }
-                $('#look').append('<h2 class="text-info mt-3">' + listedefoot[i].pays + '</h2> <p><img class="w-100" src="' + listedefoot[i].flag + '" /></p>');
+                $('#look').append('<div class="jumbotron"><h2 class="text-info my-2 text-center">' + listedefoot[i].pays + '</h2> <div class="col-md-6"><p><img class="w-100" src="' + listedefoot[i].flag + '" /></p> </div> </div>');
             };
         },
         
